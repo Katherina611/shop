@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+}
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  height: 100px;
+  background-color: rgb(79, 76, 69);
+  color: lightgrey;
+  font-family: 'EB Garamond', serif;
+  .shop-name{
+    margin: 0 100px;
+  }
+  .shop-menu {
+      display: flex;
+      flex-wrap: wrap;
+    li{
+      padding-right: 50px;
+      list-style: none;
+    }
+  }
+}
+
+.contact img{
+  width:30px;
+  height: 30px;
+}
+.shop-icon img{
+  width:30px;
+  height: 30px;
+  margin-left: 100px;
+}
+.box{
+  max-width: 1600px;
+  height:600px;
+  background-image: url("../images/truffie.jpg");
+  background-size: cover;
+}
