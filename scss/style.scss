@@ -94,3 +94,53 @@
     }
   }
 }
+.box-3{
+  display: flex;
+  .box-about img{
+    width: 600px;
+    height: 350px;
+    margin: auto 50px ;
+  }
+  .box-about-desc{
+    text-align: center;
+    width:100%;
+    font-family: 'EB Garamond', serif;
+    color:rgb(79, 76, 69);
+    h1{
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    p{
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    hr{
+      margin: 20px 150px;
+    }
+    .description{
+      margin: 40px 70px;
+      text-align: center;
+    }
+  }
+}
+.img-back{
+  margin-top: 100px;
+  background-image: url("../images/chocolate1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height:600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:lightgrey;
+  font-size: 34px;
+  font-family: 'Cinzel', serif;
+  flex-direction: column;
+  .quotation{
+    font-size: 20px;
+    margin-top: 50px;
+    font-family: 'EB Garamond', serif;
+  }
+}
