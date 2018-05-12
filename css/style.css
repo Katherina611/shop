@@ -123,4 +123,48 @@
     margin-top: 50px;
     font-family: 'EB Garamond', serif; }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  color: #4f4c45;
+  background-color: #e0dace; }
+  .contact h1 {
+    margin-top: 50px;
+    font-size: 18px; }
+  .contact hr {
+    margin: 30px 600px; }
+  .contact .tel, .contact .email, .contact .adress {
+    margin-bottom: 5px; }
+  .contact .open-hour {
+    margin-bottom: 50px; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+  form input {
+    width: 200px;
+    height: 20px;
+    background-color: #e0dace;
+    border: 1px solid #4f4c45;
+    margin: 2px 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 14px;
+    color: #4f4c45; }
+  form textarea {
+    width: 197px;
+    height: 60px;
+    background-color: #e0dace;
+    border: 1px solid #4f4c45;
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    color: #4f4c45; }
+  form #send {
+    width: 50px;
+    height: 20px;
+    background-color: #4f4c45;
+    color: lightgrey;
+    text-align: center; }
+
 /*# sourceMappingURL=style.css.map */
