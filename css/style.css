@@ -1,3 +1,33 @@
+.shop-name {
+  display: flex;
+  justify-content: center; }
+  .shop-name p {
+    font-size: 34px;
+    color: #4f4c45;
+    font-family: 'EB Garamond', serif;
+    margin-top: 50px; }
+
+.praline-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .praline-box .praline {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 80px 80px; }
+    .praline-box .praline img {
+      width: 150px;
+      height: 150px; }
+    .praline-box .praline p {
+      font-size: 16px;
+      color: #4f4c45;
+      font-family: 'EB Garamond', serif;
+      margin-top: 5px;
+      width: 150px;
+      text-align: center; }
+
 * {
   margin: 0; }
 
