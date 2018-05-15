@@ -20,6 +20,10 @@
     li{
       padding-right: 50px;
       list-style: none;
+      a{
+        color: lightgrey;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -51,7 +55,7 @@
     }
   }
 }
-.shop-online{
+.shop-online a{
   margin: 50px auto;
   color: lightgrey;
   border: 2px solid lightgrey;
@@ -60,6 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 
 }
 .box-2{
@@ -194,5 +199,15 @@ form{
     background-color: rgb(79, 76, 69);
     color:lightgrey;
     text-align: center;
+    margin-bottom: 50px;
   }
+}
+.box-footer{
+  background-color: rgb(79, 76, 69);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
 }
