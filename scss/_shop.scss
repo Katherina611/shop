@@ -1,35 +1,75 @@
-.shop-name{
-  display: flex;
-  justify-content: center;
-  p{
-    font-size: 34px;
-    color:rgb(79, 76, 69);
-    font-family: 'EB Garamond', serif;
-    margin-top: 50px;
+@media(min-width:600px){
+  .shop-name{
+    display: flex;
+    justify-content: center;
+    p{
+      font-size: 34px;
+      color:rgb(79, 76, 69);
+      font-family: 'EB Garamond', serif;
+      margin-top: 50px;
+    }
+  }
+  .praline-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .praline{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 80px 80px;
+      font-family: 'EB Garamond', serif;
+      justify-content: center;
+      img{
+        width:150px;
+        height: 150px;
+      }
+      p{
+        font-size: 16px;
+        color:rgb(79, 76, 69);
+        margin-top: 5px;
+        width:150px;
+        text-align: center;
+      }
+    }
   }
 }
-.praline-box{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  .praline{
+
+@media(max-width:600px){
+  .shop-name{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 80px 80px;
-    font-family: 'EB Garamond', serif;
     justify-content: center;
-    img{
-      width:150px;
-      height: 150px;
-    }
     p{
-      font-size: 16px;
+      margin-top: 30px;
+      font-size: 34px;
       color:rgb(79, 76, 69);
-      margin-top: 5px;
-      width:150px;
-      text-align: center;
+      font-family: 'EB Garamond', serif;
+    }
+  }
+  .praline-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .praline{
+      margin: 40px 80px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-family: 'EB Garamond', serif;
+      justify-content: center;
+      img{
+        width:140px;
+        height: 140px;
+      }
+      p{
+        font-size: 16px;
+        color:rgb(79, 76, 69);
+        margin-top: 5px;
+        width:140px;
+        text-align: center;
+      }
     }
   }
 }
