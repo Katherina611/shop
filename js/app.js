@@ -6,6 +6,7 @@ const socialIcon = document.querySelectorAll('.social img');
 //event listeners
 menuIcon.addEventListener('click', showMenu);
 
+
 //functions
 function showMenu(){
     menuIcon.style.display = 'none';
@@ -16,3 +17,4 @@ function showMenu(){
         img.style.margin = '0 20px'
     })
 }
+

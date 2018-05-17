@@ -60,6 +60,16 @@
         margin-top: 5px;
         width: 140px;
         text-align: center; } }
+.basket-name {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .basket-name p {
+    font-size: 34px;
+    color: #4f4c45;
+    font-family: 'EB Garamond', serif;
+    margin: 50px 0; }
+
 * {
   margin: 0; }
 
@@ -102,7 +112,6 @@
     margin-left: 70px; }
 
   .box {
-    max-width: 1600px;
     height: 600px;
     background-image: url("../images/truffie.jpg");
     background-size: cover; }
@@ -261,7 +270,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin: 0 auto;
-    height: 100px;
+    height: 110px;
     background-color: #4f4c45;
     color: lightgrey;
     font-family: 'EB Garamond', serif; }
@@ -292,7 +301,6 @@
     margin-left: 100px; }
 
   .box {
-    max-width: 1600px;
     height: 600px;
     background-image: url("../images/truffie.jpg");
     background-size: cover; }
