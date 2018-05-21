@@ -1,11 +1,28 @@
-.basket-name{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  p{
-    font-size: 34px;
-    color:rgb(79, 76, 69);
-    font-family: 'EB Garamond', serif;
-    margin: 50px 0;
+@media(max-width: 600px){
+  .basket-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+      text-align: center;
+      font-size: 34px;
+      color:rgb(79, 76, 69);
+      font-family: 'EB Garamond', serif;
+      margin: 50px 0;
+    }
+  }
+}
+@media(min-width: 600px){
+  .basket-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p{
+      font-size: 34px;
+      color:rgb(79, 76, 69);
+      font-family: 'EB Garamond', serif;
+      margin: 50px 0;
+    }
   }
 }

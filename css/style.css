@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center; }
     .shop-name p {
+      text-align: center;
       font-size: 34px;
       color: #4f4c45;
       font-family: 'EB Garamond', serif;
@@ -23,17 +24,26 @@
       .praline-box .praline img {
         width: 150px;
         height: 150px; }
+      .praline-box .praline .pralines-name {
+        font-weight: 700; }
       .praline-box .praline p {
         font-size: 16px;
         color: #4f4c45;
         margin-top: 5px;
         width: 150px;
-        text-align: center; } }
+        text-align: center; }
+      .praline-box .praline button {
+        margin-top: 10px;
+        width: 150px;
+        height: 30px;
+        color: lightgrey;
+        background-color: #4f4c45; } }
 @media (max-width: 600px) {
   .shop-name {
     display: flex;
     justify-content: center; }
     .shop-name p {
+      text-align: center;
       margin-top: 30px;
       font-size: 34px;
       color: #4f4c45;
@@ -54,22 +64,42 @@
       .praline-box .praline img {
         width: 140px;
         height: 140px; }
+      .praline-box .praline .pralines-name {
+        font-weight: 700; }
       .praline-box .praline p {
         font-size: 16px;
         color: #4f4c45;
         margin-top: 5px;
         width: 140px;
-        text-align: center; } }
-.basket-name {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .basket-name p {
-    font-size: 34px;
-    color: #4f4c45;
-    font-family: 'EB Garamond', serif;
-    margin: 50px 0; }
-
+        text-align: center; }
+      .praline-box .praline button {
+        margin-top: 10px;
+        width: 140px;
+        height: 30px;
+        color: lightgrey;
+        background-color: #4f4c45; } }
+@media (max-width: 600px) {
+  .basket-name {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .basket-name p {
+      text-align: center;
+      font-size: 34px;
+      color: #4f4c45;
+      font-family: 'EB Garamond', serif;
+      margin: 50px 0; } }
+@media (min-width: 600px) {
+  .basket-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .basket-name p {
+      font-size: 34px;
+      color: #4f4c45;
+      font-family: 'EB Garamond', serif;
+      margin: 50px 0; } }
 * {
   margin: 0; }
 
