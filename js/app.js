@@ -14,6 +14,18 @@ class Shop {
         }
         return chocolates;
     }
+    displayBasket(chocolates) {
+        const basket = document.querySelector('.choco-basket tbody');
+        chocolates.forEach(choco => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td><img src='${choco.image}'></td>
+                <td><p>${choco.name}</p></td>
+                <td><p>${choco.price}</p></td>
+        `;
+            basket.appendChild(tr);
+        });
+    }
 }
 
 //const
@@ -25,6 +37,7 @@ const shop = new Shop();
 
 
 //event listeners
+document.addEventListener('DOMContentLoaded', documentReady);
 menuIcon.addEventListener('click', showMenu);
 basketBtn.forEach(choco =>{
     choco.addEventListener('click', resultShop);
@@ -32,6 +45,11 @@ basketBtn.forEach(choco =>{
 
 
 //functions
+function documentReady(){
+    let chocolates = shop.getFromShop();
+    shop.displayBasket(chocolates);
+}
+
 function resultShop(event){
     const cardChoco = event.target.parentElement;
     const chocoInfo = {

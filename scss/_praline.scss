@@ -25,4 +25,15 @@
       margin: 50px 0;
     }
   }
+  .choco-basket{
+    display: flex;
+    flex-direction: column;
+    img{
+      width:150px;
+      height: 150px;
+    }
+    p{
+      display:inline-block;
+    }
+  }
 }

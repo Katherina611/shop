@@ -99,7 +99,16 @@
       font-size: 34px;
       color: #4f4c45;
       font-family: 'EB Garamond', serif;
-      margin: 50px 0; } }
+      margin: 50px 0; }
+
+  .choco-basket {
+    display: flex;
+    flex-direction: column; }
+    .choco-basket img {
+      width: 150px;
+      height: 150px; }
+    .choco-basket p {
+      display: inline-block; } }
 * {
   margin: 0; }
 
