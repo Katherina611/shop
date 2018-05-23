@@ -47,8 +47,11 @@ basketBtn.forEach(choco =>{
 
 //functions
 function documentReady(){
-    let chocolates = shop.getFromShop();
-    shop.displayBasket(chocolates);
+    const favoritesChoco = document.querySelector('.box-basket');
+    if(favoritesChoco) {
+        let chocolates = shop.getFromShop();
+        shop.displayBasket(chocolates);
+    }
 }
 
 function resultShop(event){
