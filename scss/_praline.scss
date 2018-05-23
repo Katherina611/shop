@@ -11,6 +11,28 @@
       margin: 50px 0;
     }
   }
+  .choco-basket{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    img{
+      width:100px;
+      height: 100px;
+    }
+    p{
+      display:inline-block;
+      margin: 0 5px;
+    }
+    button {
+      margin-top: 10px;
+      width: 70px;
+      height: 30px;
+      color: lightgrey;
+      background-color: rgb(79, 76, 69);
+    }
+  }
 }
 @media(min-width: 600px){
   .basket-name{
@@ -28,12 +50,23 @@
   .choco-basket{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     img{
       width:150px;
       height: 150px;
+      margin-right: 70px;
     }
     p{
       display:inline-block;
+      margin: 0 50px;
+    }
+    button {
+      margin-top: 10px;
+      width: 140px;
+      height: 30px;
+      color: lightgrey;
+      background-color: rgb(79, 76, 69);
     }
   }
 }

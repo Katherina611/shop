@@ -22,6 +22,7 @@ class Shop {
                 <td><img src='${choco.image}'></td>
                 <td><p>${choco.name}</p></td>
                 <td><p>${choco.price}</p></td>
+                <td><button>Remove</button></td>
         `;
             basket.appendChild(tr);
         });
