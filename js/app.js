@@ -8,7 +8,9 @@ class Shop {
     removeFromShop(chocolate){
         const chocolates = this.getFromShop();
         chocolates.forEach((choco, index) =>{
-            chocolates.splice(index,1);
+            if(chocolate === choco.name){
+                chocolates.splice(index,1);
+            }
         });
         localStorage.setItem('chocolates',JSON.stringify(chocolates));
     }
@@ -29,7 +31,7 @@ class Shop {
                 <td><img src='${choco.image}'></td>
                 <td><p>${choco.name}</p></td>
                 <td><p>${choco.price}</p></td>
-                <td><button class="btn-remove">Remove</button></td>
+                <td><button class="btn-remove" data-name="${choco.name}">Remove</button></td>
         `;
             basket.appendChild(tr);
         });
@@ -60,7 +62,7 @@ function documentReady(){
 
         favoritesChoco.addEventListener('click', event =>{
             if(event.target.classList.contains('btn-remove')){
-                shop.removeFromShop(event.target);
+                shop.removeFromShop(event.target.dataset.name);
                 event.target.parentElement.parentElement.remove();
             }
         })
