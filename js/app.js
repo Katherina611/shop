@@ -5,6 +5,13 @@ class Shop {
         chocolates.push(chocolate);
         localStorage.setItem('chocolates', JSON.stringify(chocolates));
     }
+    removeFromShop(chocolate){
+        const chocolates = this.getFromShop();
+        chocolates.forEach((choco, index) =>{
+            chocolates.splice(index,1);
+        });
+        localStorage.setItem('chocolates',JSON.stringify(chocolates));
+    }
     getFromShop(){
         let chocolates;
         if(localStorage.getItem('chocolates') === null){
@@ -22,7 +29,7 @@ class Shop {
                 <td><img src='${choco.image}'></td>
                 <td><p>${choco.name}</p></td>
                 <td><p>${choco.price}</p></td>
-                <td><button>Remove</button></td>
+                <td><button class="btn-remove">Remove</button></td>
         `;
             basket.appendChild(tr);
         });
@@ -35,7 +42,6 @@ const menu = document.querySelectorAll('.shop-menu li a');
 const socialIcon = document.querySelectorAll('.social img');
 const basketBtn = document.querySelectorAll('.praline button');
 const shop = new Shop();
-
 
 //event listeners
 document.addEventListener('DOMContentLoaded', documentReady);
@@ -51,8 +57,16 @@ function documentReady(){
     if(favoritesChoco) {
         let chocolates = shop.getFromShop();
         shop.displayBasket(chocolates);
+
+        favoritesChoco.addEventListener('click', event =>{
+            if(event.target.classList.contains('btn-remove')){
+                shop.removeFromShop(event.target);
+                event.target.parentElement.parentElement.remove();
+            }
+        })
     }
 }
+
 
 function resultShop(event){
     const cardChoco = event.target.parentElement;
