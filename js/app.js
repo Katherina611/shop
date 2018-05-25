@@ -36,6 +36,8 @@ class Shop {
             basket.appendChild(tr);
         });
     }
+
+
 }
 
 //const
