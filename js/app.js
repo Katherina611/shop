@@ -32,7 +32,7 @@ class Shop {
                 <td><p>${choco.name}</p></td>
                 <td><p>${choco.price}</p></td>
                 <td><button class="btn-remove" data-name="${choco.name}">Remove</button></td>
-        `;
+            `;
             basket.appendChild(tr);
         });
     }
