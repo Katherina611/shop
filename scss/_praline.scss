@@ -23,13 +23,18 @@
     }
     p{
       display:inline-block;
-      margin: 0 5px;
+      margin: 0 2px;
     }
     button {
-      margin-top: 10px;
       width: 70px;
       height: 30px;
       color: lightgrey;
+      background-color: rgb(79, 76, 69);
+    }
+    select{
+      color: lightgrey;
+      height: 20px;
+      width:30px;
       background-color: rgb(79, 76, 69);
     }
   }
@@ -62,11 +67,17 @@
       margin: 0 50px;
     }
     button {
-      margin-top: 10px;
       width: 140px;
       height: 30px;
       color: lightgrey;
       background-color: rgb(79, 76, 69);
+    }
+    select{
+      color: lightgrey;
+      height: 20px;
+      width:30px;
+      background-color: rgb(79, 76, 69);
+      margin-right: 20px;
     }
   }
 }

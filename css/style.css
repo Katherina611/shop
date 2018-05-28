@@ -101,12 +101,16 @@
       height: 100px; }
     .choco-basket p {
       display: inline-block;
-      margin: 0 5px; }
+      margin: 0 2px; }
     .choco-basket button {
-      margin-top: 10px;
       width: 70px;
       height: 30px;
       color: lightgrey;
+      background-color: #4f4c45; }
+    .choco-basket select {
+      color: lightgrey;
+      height: 20px;
+      width: 30px;
       background-color: #4f4c45; } }
 @media (min-width: 600px) {
   .basket-name {
@@ -133,11 +137,16 @@
       display: inline-block;
       margin: 0 50px; }
     .choco-basket button {
-      margin-top: 10px;
       width: 140px;
       height: 30px;
       color: lightgrey;
-      background-color: #4f4c45; } }
+      background-color: #4f4c45; }
+    .choco-basket select {
+      color: lightgrey;
+      height: 20px;
+      width: 30px;
+      background-color: #4f4c45;
+      margin-right: 20px; } }
 * {
   margin: 0; }
 
