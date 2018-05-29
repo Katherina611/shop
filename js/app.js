@@ -32,16 +32,16 @@ class Shop {
                 <td><p>${choco.name}</p></td>
                 <td><p>${choco.price}</p></td>
                 <td><select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
                 </select></td>
                 <td><button class="btn-remove" data-name="${choco.name}">Remove</button></td>
             `;
@@ -50,12 +50,17 @@ class Shop {
     }
     displayPrice(chocolate){
         const chocolates = this.getFromShop();
-        const price = document.querySelector('.choco-basket div p');
+        const price = document.querySelector('.choco-basket div .price-box');
         let sumPrice = 0;
         chocolates.forEach(choco =>{
             sumPrice +=  parseFloat(choco.price);
             price.textContent = `Do zapłaty: ${sumPrice} zł`;
         })
+    }
+    removePrice(chocolate){
+        const price = document.querySelector('.choco-basket div .price-box');
+        let sumPrice = shop.displayPrice(chocolate)- parseFloat(choco.price);
+        price.textContent = `Do zapłaty: ${sumPrice} zł`;
     }
 }
 
@@ -86,6 +91,7 @@ function documentReady(){
             if(event.target.classList.contains('btn-remove')){
                 shop.removeFromShop(event.target.dataset.name);
                 event.target.parentElement.parentElement.remove();
+                shop.removePrice(event.target);
             }
         })
     }
