@@ -48,6 +48,15 @@ class Shop {
             basket.appendChild(tr);
         });
     }
+    displayPrice(chocolate){
+        const chocolates = this.getFromShop();
+        const price = document.querySelector('.choco-basket div p');
+        let sumPrice = 0;
+        chocolates.forEach(choco =>{
+            sumPrice +=  parseFloat(choco.price);
+            price.textContent = `Do zapłaty: ${sumPrice} zł`;
+        })
+    }
 }
 
 //const
@@ -71,6 +80,7 @@ function documentReady(){
     if(favoritesChoco) {
         let chocolates = shop.getFromShop();
         shop.displayBasket(chocolates);
+        shop.displayPrice(chocolates);
 
         favoritesChoco.addEventListener('click', event =>{
             if(event.target.classList.contains('btn-remove')){
