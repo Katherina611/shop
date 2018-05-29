@@ -31,7 +31,7 @@ class Shop {
                 <td><img src='${choco.image}'></td>
                 <td><p>${choco.name}</p></td>
                 <td><p>${choco.price}</p></td>
-                <td><select>
+                <!--<td><select>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -42,7 +42,7 @@ class Shop {
                     <option value="8">8</option>
                     <option value="9">9</option>
                     <option value="10">10</option>
-                </select></td>
+                </select></td>-->
                 <td><button class="btn-remove" data-name="${choco.name}">Remove</button></td>
             `;
             basket.appendChild(tr);
@@ -53,13 +53,13 @@ class Shop {
         const price = document.querySelector('.choco-basket div .price-box');
         let sumPrice = 0;
         chocolates.forEach(choco =>{
-            sumPrice +=  parseFloat(choco.price);
+            sumPrice +=  (parseInt(choco.price));
             price.textContent = `Do zapłaty: ${sumPrice} zł`;
         })
     }
     removePrice(chocolate){
         const price = document.querySelector('.choco-basket div .price-box');
-        let sumPrice = shop.displayPrice(chocolate)- parseFloat(choco.price);
+        let sumPrice = parseInt(shop.displayPrice(chocolate))- parseInt(choco.price);
         price.textContent = `Do zapłaty: ${sumPrice} zł`;
     }
 }
@@ -91,7 +91,7 @@ function documentReady(){
             if(event.target.classList.contains('btn-remove')){
                 shop.removeFromShop(event.target.dataset.name);
                 event.target.parentElement.parentElement.remove();
-                shop.removePrice(event.target);
+                shop.removePrice(event.target)
             }
         })
     }
