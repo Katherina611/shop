@@ -101,17 +101,31 @@
       height: 100px; }
     .choco-basket p {
       display: inline-block;
-      margin: 0 2px; }
+      margin: 0 2px;
+      font-family: 'EB Garamond', serif; }
     .choco-basket button {
       width: 70px;
       height: 30px;
       color: lightgrey;
-      background-color: #4f4c45; }
+      background-color: #4f4c45;
+      font-family: 'EB Garamond', serif; }
     .choco-basket select {
       color: lightgrey;
       height: 20px;
       width: 30px;
-      background-color: #4f4c45; } }
+      background-color: #4f4c45;
+      font-family: 'EB Garamond', serif; }
+    .choco-basket .price-box {
+      color: lightgrey;
+      border: 1px solid #4f4c45;
+      background-color: #4f4c45;
+      width: 150px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+      font-family: 'EB Garamond', serif; } }
 @media (min-width: 600px) {
   .basket-name {
     display: flex;
@@ -135,18 +149,32 @@
       margin-right: 70px; }
     .choco-basket p {
       display: inline-block;
-      margin: 0 50px; }
+      margin: 0 50px;
+      font-family: 'EB Garamond', serif; }
     .choco-basket button {
       width: 140px;
       height: 30px;
       color: lightgrey;
-      background-color: #4f4c45; }
+      background-color: #4f4c45;
+      font-family: 'EB Garamond', serif; }
     .choco-basket select {
       color: lightgrey;
       height: 20px;
       width: 30px;
       background-color: #4f4c45;
-      margin-right: 20px; } }
+      margin-right: 20px;
+      font-family: 'EB Garamond', serif; }
+    .choco-basket .price-box {
+      color: lightgrey;
+      border: 1px solid #4f4c45;
+      background-color: #4f4c45;
+      width: 150px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+      font-family: 'EB Garamond', serif; } }
 * {
   margin: 0; }
 
