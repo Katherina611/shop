@@ -75,6 +75,12 @@ const menu = document.querySelectorAll('.shop-menu li a');
 const socialIcon = document.querySelectorAll('.social img');
 const basketBtn = document.querySelectorAll('.praline button');
 const shop = new Shop();
+const name = document.querySelector('#name');
+const sendBtn = document.querySelector('#send');
+const email = document.querySelector('#email');
+const subject = document.querySelector('#subject');
+const message = document.querySelector('#message');
+
 
 //event listeners
 document.addEventListener('DOMContentLoaded', documentReady);
@@ -82,10 +88,15 @@ menuIcon.addEventListener('click', showMenu);
 basketBtn.forEach(choco =>{
     choco.addEventListener('click', resultShop);
 });
+name.addEventListener('blur', validateField);
+email.addEventListener('blur', validateField);
+subject.addEventListener('blur', validateField);
+message.addEventListener('blur', validateField);
 
 
 //functions
 function documentReady(){
+    sendBtn.disabled = true;
     const favoritesChoco = document.querySelector('.box-basket');
     if(favoritesChoco) {
         let chocolates = shop.getFromShop();
@@ -124,6 +135,47 @@ function showMenu(){
     })
 }
 
+function validateLength(field){
+    if(field.value.length>0){
+        field.style.border = '2px solid rgb(79, 76, 69)';
+    }else{
+        email.style.border = '2px solid darkred'
+    }
+}
 
+function validateEmail(email){
+    let emailText = email.value;
+    if(emailText.indexOf('@') !== -1){
+        email.style.border = '2px solid rgb(79, 76, 69)'
+    }else{
+        email.style.border = '2px solid darkred'
+    }
+}
 
+function validateField() {
+    validateLength(this);
+    if (this.type === 'email') {
+        validateEmail(this)
+    }
+    if (email.value !== '' && subject.value !== '' && message.value !== '' && name.value !== '') {
+        sendBtn.disabled = false;
+        sendBtn.addEventListener('click', sendMessage);
+    }else{
+        sendBtn.disabled = true;
+    }
+}
+
+function sendMessage(event){
+    event.preventDefault();
+    let emailForm = email.value;
+    let nameForm = name.value;
+    let messageForm = message.value;
+    let subjectForm = subject.value;
+    console.log(nameForm, emailForm, messageForm, subjectForm);
+    name.value = 'Name *';
+    email.value = 'Email *';
+    subject.value = 'Subject *';
+    message.value = 'Message *';
+
+}
 
