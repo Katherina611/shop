@@ -54,8 +54,13 @@ class Shop {
         let sumPrice = 0;
         chocolates.forEach(choco =>{
             sumPrice +=  (parseInt(choco.price));
-            price.textContent = `Do zapłaty: ${sumPrice} zł`;
-        })
+            price.textContent = `Do zapłaty: ${sumPrice},00 zł`;
+        });
+        if(sumPrice===0){
+            price.style.display = 'none'
+        }else{
+            price.style.display = 'block'
+        }
     }
     removePrice(chocolate){
         const price = document.querySelector('.choco-basket div .price-box');

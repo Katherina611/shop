@@ -46,10 +46,10 @@
       background-color: rgb(79, 76, 69);
       width:150px;
       height:40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 50px;
+      display: none;
+      text-align: center;;
+      margin: 0 50px;
+      padding-top: 10px;
       font-family: 'EB Garamond', serif;
     }
   }
@@ -92,7 +92,7 @@
     select{
       color: lightgrey;
       height: 20px;
-      width:30px;
+      width:40px;
       background-color: rgb(79, 76, 69);
       margin-right: 20px;
       font-family: 'EB Garamond', serif;
@@ -102,12 +102,12 @@
       border:1px solid rgb(79, 76, 69);
       background-color: rgb(79, 76, 69);
       width:150px;
-      height:40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 50px;
+      height:30px;
+      text-align: center;
+      margin:50px 0;
+      padding-top: 10px;
       font-family: 'EB Garamond', serif;
+      display:none;
     }
   }
 }
