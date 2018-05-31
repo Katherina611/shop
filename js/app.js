@@ -88,15 +88,17 @@ menuIcon.addEventListener('click', showMenu);
 basketBtn.forEach(choco =>{
     choco.addEventListener('click', resultShop);
 });
-name.addEventListener('blur', validateField);
-email.addEventListener('blur', validateField);
-subject.addEventListener('blur', validateField);
-message.addEventListener('blur', validateField);
-
 
 //functions
 function documentReady(){
-    sendBtn.disabled = true;
+    const form = document.querySelector('form');
+    if(form){
+        sendBtn.disabled = true;
+        name.addEventListener('blur', validateField);
+        email.addEventListener('blur', validateField);
+        subject.addEventListener('blur', validateField);
+        message.addEventListener('blur', validateField);
+    }
     const favoritesChoco = document.querySelector('.box-basket');
     if(favoritesChoco) {
         let chocolates = shop.getFromShop();
