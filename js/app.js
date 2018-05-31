@@ -176,6 +176,10 @@ function sendMessage(event){
     email.value = 'Email *';
     subject.value = 'Subject *';
     message.value = 'Message *';
+    name.style.border = '1px solid rgb(79, 76, 69)';
+    email.style.border = '1px solid rgb(79, 76, 69)';
+    subject.style.border = '1px solid rgb(79, 76, 69)';
+    message.style.border = '1px solid rgb(79, 76, 69)';
 
 }
 
